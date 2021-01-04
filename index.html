@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Dynamic web reader
+        </title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+HK:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Roboto+Mono:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alike+Angular&family=Asul&family=Concert+One&family=Neuton&family=Work+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body id="body">
+        <div class="cog">
+            <img id="wheel" src="./cogwheel_paint2d.png">
+            <div id="settings" class="settings">
+                
+                    <label for="fonts">select a fontface:</label>
+                    <select id="fonts" name="fonts">
+                      <option value="Bebas Neue">Bebas Neue</option>
+                      <option value="Noto Sans">Noto Sans</option>
+                      <option value="PlayFair Display">Play Fair</option>
+                      <option value="Roboto Mono">Roboto mono</option>
+                      <option value="Roboto">Roboto</option>
+                      <option value="Alike Angular">Alike</option>
+                      <option value="Asul">Asul</option>
+                      <option value="Concert One">Concert one</option>
+                      <option value="Neuton">Neuton</option>
+                      <option value="Work Sans">Work Sans</option>
+                    </select>
+                    <br>
+                    <label id="fontlabel" for="size">Font Size:</label>
+                    <input id="size" name="size" type="range" min="12" max="60" step="2">
+                    <br>
+                    
+                    <label for="small">small</label>
+                    <input id="small" name="weight" type="radio" value="100">
+                    
+                    <label for="regular">Regular</label>
+                    <input id="regular" name="weight" type="radio" value="300">
+                    
+                    <label for="bold">Bold</label>
+                    <input id="bold" name="weight" type="radio" value="500">
+                    <br>
+                    <label for="extrabold">Extra Bold</label>
+                    <input id="extrabold" name="weight" type="radio" value="700">
+                    
+                    <br>
+                    <label for="theme">change theme:</label>
+                    <select id="theme" name="theme">
+                      <option value="light">Light</option>
+                      <option value="dark">Dark</option>
+                      <option value="sunset">sunset</option>
+                      </select>
+                      <br>
+                      <div class="advance">
+                        <div id="advancesl" class="advancesl">
+                            <span>Advance: custom theme</span>
+                            <div id="arrow1">
+                               <span id="arrow" class="arrow">></span> 
+                            </div>
+                            
+                            </div>
+                        <div id="advanceinp">
+                        <label for="fcolor">font color:</label>
+                        <br>
+                            <input type="text" id="fcolor" name="fcolor"><br>
+                            <label for="bgcolor">background color:</label><br>
+                            <input type="text" id="bgcolor" name="bgcolor">
+                        </div>
+                    </div>      
+            </div>
+        </div>
+        
+        <div id="text" class="text">
+            <H1>Heading</H1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mi ipsum, faucibus nec finibus at, facilisis quis ante. Sed vel lectus id risus placerat aliquet. Sed laoreet tellus viverra neque scelerisque ornare. Quisque ut erat dui. Curabitur cursus mattis lacus. Mauris interdum cursus velit, eu porta massa posuere ut. Suspendisse consectetur eget arcu vel rutrum. Vestibulum ut ex vel nibh placerat fermentum. Sed finibus molestie erat, a ultrices libero facilisis nec. Duis ut nisl eu leo porta hendrerit. Vestibulum scelerisque aliquet massa, non ultrices eros bibendum ut. Vivamus eleifend, purus non rutrum consequat, ex mi consectetur urna, nec porttitor tellus leo et ligula. Nullam vulputate leo nec rhoncus fringilla. Sed posuere bibendum magna sit amet luctus.</p>
+            <p id="log"></p>
+        </div>
+    </body>
+    <script src="./script.js" type="text/javascript"> async</script>
+</html>
