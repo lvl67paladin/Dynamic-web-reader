@@ -9,3 +9,7 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif;
 font-family: 'Titillium Web', sans-serif;
 font-family: 'Work Sans', sans-serif;
+
+configure your reading experience on the web.
+see the code in action here:
+https://repl.it/@lvl67paladin/Dynamic-web-reader#README.md
