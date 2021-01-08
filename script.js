@@ -1,7 +1,6 @@
 let cog = document.getElementById('wheel');
 let settings = document.getElementById('settings');
-let body = document.getElementById('body');
-
+const body = document.getElementById('body');
 let text = document.getElementById('text');
 let fonts = document.getElementById('fonts');
 let fsize = document.getElementById('size');
@@ -9,7 +8,27 @@ let flabel = document.getElementById('fontlabel');
 let theme = document.getElementById('theme');
 
 let arrow = document.getElementById('arrow');
+let weight = document.getElementById('fontweight');
 
+
+let changeobj = {
+    changeBgColor(color){
+        body.style.backgroundColor=color;
+    },
+    changeFgColor(color){
+        text.style.color=color;
+    },
+    changeFontFamily(fontFamily){
+        text.style.fontFamily=fontFamily.value;
+    },
+    changeFontWeight(weight){
+        text.style.fontWeight=weight.value;
+    },
+    changeFontSize(size){
+        //change font size in px
+        text.style.fontSize=size.value+"px";
+    }
+  };
 arrow.onclick=()=>{
     arrow.style.transform="rotate(90deg)";
 };
@@ -17,29 +36,26 @@ arrow.onclick=()=>{
 
 theme.onchange=()=>{
     if(theme.value=="dark"){
-    body.style.backgroundColor="black";
-    text.style.color="white";
-    
-    
+        changeobj.changeBgColor("black");
+        changeobj.changeFgColor("white");
     }
     else if(theme.value=="light"){
-        body.style.backgroundColor="white";
-        text.style.color="black";
+        changeobj.changeBgColor("white");
+        changeobj.changeFgColor("black");
         
     }
     else if(theme.value=="sunset"){
-        body.style.backgroundColor="#f54c2f"; 
-        text.style.color="#d4c02a";
+        changeobj.changeBgColor("#f54c2f"); 
+        changeobj.changeFgColor("#d4c02a")
     }
 };
 
 fonts.onchange=()=>{
-    text.style.fontFamily=fonts.value;
-    
+    changeobj.changeFontFamily(fonts);
 };
 
 fsize.onchange=()=>{
-    text.style.fontSize = fsize.value+"px";
+    changeobj.changeFontSize(fsize);
     flabel.innerHTML="Font size:"+fsize.value;
 };
 
@@ -57,9 +73,13 @@ let settingsfun = () =>{
     }
 };
 cog.addEventListener('click', settingsfun);
+
+weight.onchange = () => {
+    //text.style.fontWeight=weight.value;
+    changeobj.changeFontWeight(weight);
+};
+
 /* to hide settings when user clicks outside of settings*/
-
-
 text.onclick = () => {
     settings.style.display= "none"
 };

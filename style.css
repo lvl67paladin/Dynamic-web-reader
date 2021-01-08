@@ -8,6 +8,7 @@ body {
 .text {
     font-family: "Arial";
     font-size: medium;
+    font-weight: 300;
     color:black;
     z-index: 1;
 }

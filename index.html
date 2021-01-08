@@ -6,9 +6,8 @@
         </title>
     <link href="./style.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+HK:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Roboto+Mono:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Alike+Angular&family=Asul&family=Concert+One&family=Neuton&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Neuton:wght@300;400;700;800&family=Open+Sans:wght@300;400;700;800&family=Playfair+Display:wght@400;500;700;900&family=Poppins:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&family=Titillium+Web:wght@300;400;700;900&family=Work+Sans:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body id="body">
         <div class="cog">
@@ -17,14 +16,12 @@
                 
                     <label for="fonts">select a fontface:</label>
                     <select id="fonts" name="fonts">
-                      <option value="Bebas Neue">Bebas Neue</option>
-                      <option value="Noto Sans">Noto Sans</option>
+                      <option value="Open Sans">Open Sans</option>
+                      <option value="Poppins">Poppins</option>
                       <option value="PlayFair Display">Play Fair</option>
-                      <option value="Roboto Mono">Roboto mono</option>
+                      <option value="Roboto Slab">Roboto Slab</option>
                       <option value="Roboto">Roboto</option>
-                      <option value="Alike Angular">Alike</option>
-                      <option value="Asul">Asul</option>
-                      <option value="Concert One">Concert one</option>
+                      <option value="Titillium Web">Titillium</option>
                       <option value="Neuton">Neuton</option>
                       <option value="Work Sans">Work Sans</option>
                     </select>
@@ -32,18 +29,15 @@
                     <label id="fontlabel" for="size">Font Size:</label>
                     <input id="size" name="size" type="range" min="12" max="60" step="2">
                     <br>
-                    
-                    <label for="small">small</label>
-                    <input id="small" name="weight" type="radio" value="100">
-                    
-                    <label for="regular">Regular</label>
-                    <input id="regular" name="weight" type="radio" value="300">
-                    
-                    <label for="bold">Bold</label>
-                    <input id="bold" name="weight" type="radio" value="500">
-                    <br>
-                    <label for="extrabold">Extra Bold</label>
-                    <input id="extrabold" name="weight" type="radio" value="700">
+                    <label for="fontweight">font weight:</label>
+                    <select id="fontweight" name="fontweight">
+                    <option value="100">thin</option>
+                    <option value="300">light</option>
+                    <option value="400">regular</option>
+                    <option value="500">medium</option>
+                    <option value="700">bold</option>
+                    <option value="900">black</option>
+                    </select>
                     
                     <br>
                     <label for="theme">change theme:</label>
