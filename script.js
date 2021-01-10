@@ -9,7 +9,8 @@ let theme = document.getElementById('theme');
 
 let arrow = document.getElementById('arrow');
 let weight = document.getElementById('fontweight');
-
+const button = document.querySelector('#submitbtn');
+const form = document.querySelector('#form');
 
 let changeobj = {
     changeBgColor(color){
@@ -83,3 +84,8 @@ weight.onchange = () => {
 text.onclick = () => {
     settings.style.display= "none"
 };
+
+button.onclick = ()=>{
+        changeobj.changeFgColor(form.elements[0].value);
+        changeobj.changeBgColor(form.elements[1].value);
+}
