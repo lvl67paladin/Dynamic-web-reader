@@ -60,3 +60,11 @@ img:hover {
    transform: rotate(40deg);
 
 }
+
+#submitbtn {
+    border: 2px solid black;
+    background-color: whitesmoke;
+    width: 45px;
+    margin-left: 40px;
+    cursor: pointer;
+}
