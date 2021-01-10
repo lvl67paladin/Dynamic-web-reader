@@ -13,3 +13,7 @@ font-family: 'Work Sans', sans-serif;
 configure your reading experience on the web.
 see the code in action here:
 https://repl.it/@lvl67paladin/Dynamic-web-reader#README.md
+or here:
+https://codepen.io/lvl67paladin/pen/dypqpXg
+
+you have to click the cogwheel image on the top right corner and interact with the settings.
