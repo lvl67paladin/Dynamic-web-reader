@@ -1,4 +1,4 @@
-# Dynamic-web-reader
+# Reader-Mode
 code to make reading easier by actively changing font settings and color schemes. I want to keep this as simple as possible.
 # Font families
 font-family: 'Neuton', serif;
